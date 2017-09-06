@@ -1,0 +1,1267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context="com.music.chillin.launchpad.MainLaunchPad">
+
+
+
+    <ImageView
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/main_back_00000" />
+    <ImageButton
+        android:id="@+id/back_pad"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/back_button" />
+
+    <TextView
+        android:id="@+id/Kitname_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="kitname"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginStart="4dp"
+        android:textSize="24sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/back_black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@dimen/launchpad_background1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent">
+                </LinearLayout>
+
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gif_main"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@android:color/transparent"
+                    android:padding="0dp"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7">
+
+                <ImageView
+                    android:id="@+id/set_skin"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/revision_00000"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@dimen/launchpad_background3"> </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.3">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+
+                    android:id="@+id/howtoplay"
+                    android:src="@drawable/lerntoplay_00000"
+                    android:layout_width="130dp"
+                    android:layout_height="75dp"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginLeft="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintHorizontal_bias="0.13"
+                    android:background="?android:attr/selectableItemBackground"
+                    app:layout_constraintVertical_bias="0.72" />
+            </android.support.constraint.ConstraintLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/launchpad_buttons">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"> </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r1_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:cropToPadding="false"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card" >
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/loop_logo_r1_1"
+                                    android:layout_width="@dimen/loop_height"
+                                    android:layout_height="@dimen/loop_height"
+                                    android:scaleType="fitCenter"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentStart="true"
+                                    android:src="@drawable/loop_00000" />
+
+                                <ImageView
+                                    android:id="@+id/ar1_1"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000" />
+
+                            </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r1_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card" >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/loop_logo_r1_2"
+                                    android:layout_width="@dimen/loop_height"
+                                    android:layout_height="@dimen/loop_height"
+                                    android:scaleType="fitCenter"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentStart="true"
+                                    android:src="@drawable/loop_00000"/>
+                                <ImageView
+                                    android:id="@+id/ar1_2"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r1_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/loop_logo_r1_3"
+                                    android:layout_width="@dimen/loop_height"
+                                    android:layout_height="@dimen/loop_height"
+                                    android:scaleType="fitCenter"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentStart="true"
+                                    android:src="@drawable/loop_00000"/>
+                                <ImageView
+                                    android:id="@+id/ar1_3"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000" />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r1_4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/loop_logo_r1_4"
+                                    android:layout_width="@dimen/loop_height"
+                                    android:layout_height="@dimen/loop_height"
+                                    android:scaleType="fitCenter"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentStart="true"
+                                    android:src="@drawable/loop_00000" />
+                                <ImageView
+                                    android:id="@+id/ar1_4"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000" />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r1_5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card" >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/loop_logo_r1_5"
+                                    android:layout_width="@dimen/loop_height"
+                                    android:layout_height="@dimen/loop_height"
+                                    android:scaleType="fitCenter"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentStart="true"
+                                    android:src="@drawable/loop_00000" />
+                                <ImageView
+                                    android:id="@+id/ar1_5"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r1_6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card" >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/loop_logo_r1_6"
+                                    android:layout_width="@dimen/loop_height"
+                                    android:layout_height="@dimen/loop_height"
+                                    android:scaleType="fitCenter"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentStart="true"
+                                    android:src="@drawable/loop_00000"/>
+                                <ImageView
+                                    android:id="@+id/ar1_6"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r2_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar2_1"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r2_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card" >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar2_2"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r2_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar2_3"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r2_4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar2_4"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r2_5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar2_5"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r2_6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar2_6"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000" />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r3_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar3_1"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000" />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r3_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar3_2"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000" />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r3_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar3_3"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000" />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r3_4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar3_4"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r3_5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar3_5"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000" />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r3_6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card" >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar3_6"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r4_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card" >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar4_1"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r4_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card" >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar4_2"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000" />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r4_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card" >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar4_3"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r4_4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar4_4"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r4_5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar4_5"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r4_6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar4_6"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r5_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar5_1"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r5_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar5_2"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r5_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar5_3"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r5_4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card"
+                        >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar5_4"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r5_5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card" >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar5_5"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000" />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r5_6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card" >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar5_6"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r6_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card"
+                        >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar6_1"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r6_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card"
+                        >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar6_2"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r6_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card" >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar6_3"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r6_4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card" >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar6_4"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r6_5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card" >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar6_5"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000" />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/r6_6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/margin_card"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/cornerradius_card" >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/ar6_6"
+                                    android:layout_width="@dimen/color_height"
+                                    android:layout_height="@dimen/color_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="@dimen/color_margin"
+                                    app:srcCompat="@drawable/audio_indicator_00000"  />
+
+                            </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"></LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.40">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent" >
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/logo_activtity_00000" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

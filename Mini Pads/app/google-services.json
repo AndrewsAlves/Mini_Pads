@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "603512281185",
+    "firebase_url": "https://launchpad-93445.firebaseio.com",
+    "project_id": "launchpad-93445",
+    "storage_bucket": "launchpad-93445.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603512281185:android:ee5e1dbe93579bc5",
+        "android_client_info": {
+          "package_name": "com.music.chillin.launchpad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603512281185-35h9h25j2etv7p09490v884p5ti1n01p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.music.chillin.launchpad",
+            "certificate_hash": "535ce0ce5185c94297e1a7f7d8ab8e0c0e139db1"
+          }
+        },
+        {
+          "client_id": "603512281185-5otmhmol25aabdd170cdglcjafgibf20.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoGtglcyHXf7w2tmkh6t_USJsSEB3yTY4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603512281185-5otmhmol25aabdd170cdglcjafgibf20.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

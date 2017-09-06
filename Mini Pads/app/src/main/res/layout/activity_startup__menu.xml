@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="com.music.chillin.launchpad.Startup_Menu">
+
+<ImageView
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/main_back_00000"
+    android:scaleType="centerCrop"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="0.25">
+
+        `
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/black"
+                android:text="Mini Pads"
+                android:textSize="40sp"
+                android:id="@+id/title" />-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+            android:layout_width="200dp"
+            android:gravity="center"
+                android:layout_margin="6dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/international_toggle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:text="INTERNATIONAL"
+                android:textAlignment="center"
+                android:textColor="?android:attr/textColorHint" />
+
+            <TextView
+                android:id="@+id/indian_toggle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="INDIAN"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/searchbar"
+                android:layout_width="290dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_height="35dp">
+                <ImageView
+                    android:padding="10dp"
+                    android:src="@drawable/search_128"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/search_text_view"
+                    android:layout_width="220dp"
+                    android:layout_height="35dp"
+                    android:hint="Search Song"
+                    android:textAlignment="center"
+                    android:textSize="12sp" />
+                <ImageView
+                    android:padding="10dp"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+             <ListView
+                android:id="@+id/songs_recycler"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                 android:layout_weight="1"
+                 android:layout_marginStart="10dp"
+                 android:layout_marginEnd="10dp"
+                 android:requiresFadingEdge="vertical"
+                 android:fadingEdgeLength="20dp">
+
+            </ListView>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo_activtity_00000" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView_startup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            ads:adUnitId="@string/banner_startmenu"
+            ads:adSize="BANNER">
+
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+    </LinearLayout>
+        <FrameLayout
+            android:id="@+id/select_skin_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"> </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/material_design_android_floating_action_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            fab:menu_animationDelayPerItem="55"
+            fab:menu_backgroundColor="@android:color/transparent"
+            fab:menu_buttonSpacing="0dp"
+            fab:menu_colorNormal="#FFFFFF"
+            fab:menu_colorPressed="#99d4d4d4"
+            fab:menu_colorRipple="#FFFFFF"
+            fab:menu_fab_size="mini"
+            fab:menu_icon="@drawable/fab_icon_00000"
+            fab:menu_labels_colorNormal="#444"
+            fab:menu_labels_colorPressed="@color/grey_500"
+            fab:menu_labels_colorRipple="#66efecec"
+            fab:menu_labels_cornerRadius="2dp"
+            fab:menu_labels_ellipsize="none"
+            fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+            fab:menu_labels_position="left"
+            fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+            fab:menu_labels_showShadow="true"
+            fab:menu_labels_singleLine="false"
+            fab:menu_labels_textColor="@color/white"
+            fab:menu_labels_textSize="12sp"
+            fab:menu_openDirection="down"
+            app:menu_showShadow="true"
+            >
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/bug_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bug_00000"
+                app:fab_colorNormal="#FFFFFF"
+                fab:fab_label="Send Bug Report"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share_00000"
+                app:fab_colorNormal="#FFFFFF"
+                fab:fab_label="Share"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rate_us_00000"
+                app:fab_colorNormal="#FFFFFF"
+                fab:fab_label="Rate This App"
+                fab:fab_size="mini" />
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/facebook_00000"
+                app:fab_colorNormal="#FFFFFF"
+                fab:fab_label="Like"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/instagram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/instagram_00000"
+                app:fab_colorNormal="#FFFFFF"
+                fab:fab_label="Follow"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/youtube"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/youtube_00000"
+                app:fab_colorNormal="#FFFFFF"
+                fab:fab_label="Subscribe"
+                fab:fab_size="mini" />
+        </com.github.clans.fab.FloatingActionMenu>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

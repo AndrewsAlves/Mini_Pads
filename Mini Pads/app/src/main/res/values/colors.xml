@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+
+    <item name="gif_pads" type="id"/>
+
+
+    <color name="white">#ffffff</color>
+    <color name="default_text_color">#60000000</color>
+
+    <color name="red">#ff0000</color>
+    <color name="yellow">#EEE600</color>
+    <color name="green">#11E500</color>
+    <color name="skyblue">#00D6D3</color>
+    <color name="blue">#003AFF</color>
+    <color name="purple">#B600FF</color>
+    <color name="orange">#FF9300</color>
+    <color name="pink">#EC00A5</color>
+
+    <color name="black">#000000</color>
+
+
+</resources>

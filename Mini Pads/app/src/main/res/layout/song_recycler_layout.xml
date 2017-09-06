@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/relative_layout_songs"
+    android:layout_height="70dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="70dp"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/list_layout_3_00000"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/iistodownload"
+            android:layout_width="match_parent"
+            android:src="@drawable/download_icon_00000"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/kitfistLetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:text="S"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/kitname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:text="Song1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/youtubeTutorial"
+        android:layout_toEndOf="@+id/relativeLayout2" />
+    <TextView
+        android:text="Inspired by"
+        android:textSize="14sp"
+        android:textColor="@color/default_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/songname"
+        android:layout_toEndOf="@+id/relativeLayout2" />
+
+    <TextView
+        android:text="realname"
+        android:id="@+id/songname"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/relativeLayout2" />
+
+
+    <ImageView
+        android:id="@+id/youtubeTutorial"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        app:srcCompat="@drawable/youtube_000001"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="margin_card">2dp</dimen>
+    <dimen name="cornerradius_card">2dp</dimen>
+    <dimen name="loop_height">10dp</dimen>
+    <dimen name="color_height">3dp</dimen>
+    <dimen name="color_margin">1dp</dimen>
+
+    <item name="launchpad_background1" type="dimen" format="float">2.35</item>
+    <item name="launchpad_background3" type="dimen" format="float">0.8</item>
+    <item name="launchpad_buttons" type="dimen" format="float">3.11</item>
+</resources>
